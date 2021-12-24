@@ -54,6 +54,11 @@ button[type="submit"] {
     font-family: "montserret";
     text-align: center;
     cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+button[type="submit"]:hover {
+    background-color: rgb(103, 113, 121);
 }
 
 textarea {

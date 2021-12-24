@@ -14,6 +14,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .container{
     width: 90%;
@@ -56,6 +57,7 @@ button[type="submit"] {
     cursor: pointer;
     margin-top: 10px;
     transition: .3s ease background-color;
+    
 }
 button[type="submit"]:hover {
     background-color: rgb(103, 113, 121);
@@ -64,3 +66,35 @@ button[type="submit"]:hover {
 textarea {
     resize: vertical;
 }
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+#status.success {
+    background-color: rgb(211,250, 153);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+

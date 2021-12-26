@@ -9,9 +9,11 @@ window.addEventListener("DOMContentLoaded", function (){
 
     function success() {
         form.reset();
+        status.classList.add('success');
         status.innerHTML = "Thanks for your submission!";
     }
     function error() {
+        status.classList.add("error");
         status.innerHTML = "Oops! There was a problem submitting your form";
     }
 
@@ -22,3 +24,4 @@ window.addEventListener("DOMContentLoaded", function (){
         ajax(form.method, form.action, data, success, error);
     });
 });
+

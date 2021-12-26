@@ -14,4 +14,11 @@ window.addEventListener("DOMContentLoaded", function (){
     function error() {
         status.innerHTML = "Oops! There was a problem submitting your form";
     }
+
+    // handle the form submission event
+    form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+    });
 });

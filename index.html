@@ -8,9 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
+    <div id="myMenu" class="dropdown">
+        <a href="javascript: void(0)" class="buttonX" 
+        onclick="closeMenu()">&times;</a>
+    <div class="dropdown-lists">
+        <a href="#">Home</a>
+        <a href="#">Foods by Occasions</a>
+        <a href="#">Foods by Type</a>
+        <a href="#">Contact</a>
     </div>
+    </div>
+    <span class="hamburgerBtn" onclick="openMenu()">&#9776;</span>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

@@ -5,66 +5,64 @@
 }
 
 body {
-    background: #272727;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu-btn {
+.dropdown{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #002626;
+    overflow-y: hidden;
+    transition: .5s;
+}
+
+.dropdown-lists{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 80px;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dropdown a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: grey;
+    display: block;
+    transition: .3s;
+}
+
+.dropdown a:hover, .dropdown a:focus {
+    color: whitesmoke;
     cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 3px solid #fff;
 }
 
-
-.menu-btn__burger {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
+.hamburgerBtn{
+    color: #0e4749;
+    left: 10px;
+    top: 20px;
+    font-size: 50px;
+    cursor: pointer;
 }
 
-.menu-btn__burger::before,
-.menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-    transition: all .5s ease-in-out;
+.dropdown .buttonX{
+    top: 20px;
+    right: 50px;
+    font-size: 60px;
+    color: grey;
 }
 
-.menu-btn__burger::before {
-    transform: translateY(-16px);
+@media screen and (max-height:600px) {
+    .dropdown .buttonX {
+        font-size: 40px;
 
-}
-
-.menu-btn__burger::after {
-    transform: translateY(16px);
-}
-/* Animation for button */
-.menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-}
-
-.menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+    }
+    .hamburgerBtn{
+        font-size: 40px;
+    }
 }

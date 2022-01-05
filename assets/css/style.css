@@ -6,7 +6,7 @@
 
 body {
   font-family: "Montserret";
-  background-color: #494848;
+  background-color: black;
   background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 section {
@@ -247,27 +247,7 @@ h2 {
   font-size: 14px;
 }
 
-/* add media query to contact form */
-@media(max-width:500px){
-  #contact-form{
-    padding: 25px 30px;
-  }
-}
-
-/* add media query to img section */
-@media(max-width:500px){
-  #bg-img{
-    padding: 25px 30px;
-    text-align: center;
-    justify-content: center;
-    display: inline-block;
-    align-items: center;
-  }
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Styling for the drop down menu */
 
 .dropdown{
     height: 0%;
@@ -303,6 +283,15 @@ body {
     cursor: pointer;
 }
 
+.dropdown .buttonX{
+  top: 20px;
+  right: 50px;
+  font-size: 60px;
+  color: grey;
+}
+
+/* Styling for Hamburger Button on drop down  */
+
 .hamburgerBtn{
     color: #0e4749;
     left: 10px;
@@ -311,11 +300,24 @@ body {
     cursor: pointer;
 }
 
-.dropdown .buttonX{
-    top: 20px;
-    right: 50px;
-    font-size: 60px;
-    color: grey;
+/* add media query to contact form */
+
+@media(max-width:500px){
+  #contact-form{
+    padding: 25px 30px;
+  }
+}
+
+/* add media query to img section */
+
+@media(max-width:500px){
+    .bg-img{ 
+    padding: 25px 30px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+  }
 }
 
 @media screen and (max-height:600px) {

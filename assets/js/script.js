@@ -24,3 +24,13 @@ window.addEventListener("DOMContentLoaded", function (){
         ajax(form.method, form.action, data, success, error);
     });
 });
+
+
+function openMenu() {
+    document.getElementById("myMenu").style.height = "100%"
+}
+
+function closeMenu() {
+    document.getElementById("myMenu").style.height = "0%"
+}
+

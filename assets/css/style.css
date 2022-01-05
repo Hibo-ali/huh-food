@@ -207,4 +207,70 @@ h2 {
 .search-form {
     align-items: center;
    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #002626;
+    overflow-y: hidden;
+    transition: .5s;
+}
+
+.dropdown-lists{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dropdown a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: grey;
+    display: block;
+    transition: .3s;
+}
+
+.dropdown a:hover, .dropdown a:focus {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.hamburgerBtn{
+    color: #0e4749;
+    left: 10px;
+    top: 20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.dropdown .buttonX{
+    top: 20px;
+    right: 50px;
+    font-size: 60px;
+    color: grey;
+}
+
+@media screen and (max-height:600px) {
+    .dropdown .buttonX {
+        font-size: 40px;
+
+    }
+    .hamburgerBtn{
+        font-size: 40px;
+    }
 }

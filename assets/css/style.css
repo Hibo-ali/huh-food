@@ -154,6 +154,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  
 }
 
 h2 {
@@ -186,7 +187,7 @@ h2 {
     width: 600px;
 }
 
-.location {
+.city {
     width: 100px;
 }
 

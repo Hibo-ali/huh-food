@@ -149,7 +149,7 @@ header nav ul li a {
   height: 100vh;
   background-image: url(bg2.jpg);
   background-size: cover;
-  
+  display: flex;
   background-position: center;
   justify-content: center;
   align-items: center;

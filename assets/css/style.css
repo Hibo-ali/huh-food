@@ -185,6 +185,7 @@ h2 {
   padding: 7px;
   color: white;
   font-weight: bolder;
+  
   margin-bottom: 10px;
   font-size: 40px;
   letter-spacing: 2px;
@@ -235,6 +236,33 @@ h2 {
 
 .search-form {
   display: inline-block;
+}
+
+.star {
+  color: red;
+}
+
+.optional {
+  color: #707070;
+  font-size: 14px;
+}
+
+/* add media query to contact form */
+@media(max-width:500px){
+  #contact-form{
+    padding: 25px 30px;
+  }
+}
+
+/* add media query to img section */
+@media(max-width:500px){
+  #bg-img{
+    padding: 25px 30px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+  }
 }
 
 body {

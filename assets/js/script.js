@@ -42,13 +42,10 @@ function ajax(method, url, data, success, error) {
 
 }
 
+// Mobile Menu
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
 
-
-function openMenu() {
-    document.getElementById("myMenu").style.height = "100%"
-}
-
-function closeMenu() {
-    document.getElementById("myMenu").style.height = "0%"
-}
-
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active')
+});

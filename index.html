@@ -6,33 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
 </head>
 <body>
       <header>
-        <h1> <a href="/">Foodiescape</a>
-        </h1>
+        <!-- Nav-->
 
+    <nav class="navbar is-black">
+        <!-- Logo -->
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+            <img src="./assets/images/logo_transparent.jpg" style="max-height: 70px;" class="py-2 px-2" alt="">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="" class="navbar-item is-size-4">About Us</a>
+                <a href="./Policy-index.html" class="navbar-item is-size-4">Policy</a>
+                <a href="./contact.html" class="navbar-item is-size-4">Contact Us</a>
+            </div>
+        </div>
+        </nav>
+        <!-- Drop down menu/Hamburger button 
             <div id="myMenu" class="dropdown">
                 <a href="javascript: void(0)" class="buttonX" 
                 onclick="closeMenu()">&times;</a>
             <div class="dropdown-lists">
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
+                <a href="./Policy-index.html">Policy</a>
                 <a href="#contact-form">Contact</a>
+
             </div>
             </div>
             <span class="hamburgerBtn" onclick="openMenu()">&#9776;</span>
-     
+        -->
       </header>
 
       <section class="bg-img">
 
+          <h2 class="is-size-1 is-italic has-text-weight-bold has-text-centered has-text-white py-6">Find Food Near You</h2>
           
-        
-          <h2>Find food near you</h2>
+          <!-- Search Form -->
           <div class="search-form">
-
-            
             <input class="search-field business" type="text" placeholder="Restaurant" >
             <input class="search-field locator" type="text" placeholder="City" >
             <button class="search-btn" type="button">Search</button>
@@ -41,7 +67,7 @@
       </section>
 
 
-
+<!--
     <section id="contact-form">
        
         <div class="container" >
@@ -78,7 +104,7 @@
         </div>
         <div id="status"></div>
     </section>
-
+-->
       <div id="about-us">
         <div class="hiba">
 

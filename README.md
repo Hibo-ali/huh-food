@@ -8,11 +8,11 @@
 
 It is done when:
 * There is a trending page that displays top comments/restaurants
-* A slideshow of food
-* Drop down navigation bar
-* Interactive
+
+* Responsive navigation bar
+* Can use search bar to look up restaurants
 * Contact info displayed on the page
-* About us -> Our Story
+* About us contains personalized messages and pictures
 
 ## Description
 We are in a post pandemic world, where we have quickly become reliant on fast food & delivery services. So in light of that we were inspired to help our fellow food lover by compiling all of the restarants 

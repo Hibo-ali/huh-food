@@ -84,10 +84,12 @@ h2 {
 
 .homepage a {
     color: #ddd;
+    font-weight: bold;
 }
 
 .homepage a:hover {
     color: #3c5bc4;
+    font-weight: bolder;
 }
 
 

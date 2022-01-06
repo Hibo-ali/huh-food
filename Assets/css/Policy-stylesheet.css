@@ -1,0 +1,36 @@
+.hero {
+    background-position: bottom;
+    height: auto;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+  .page-title {
+      color: #0528ec;
+      display: inline-block;
+      border-bottom: 4px solid #fc38db;
+      padding: 0 80px 15px 80px;
+      font-weight: normal;
+      font-size: 42px;
+      font-style: italic;
+  }
+  .secondary-content {
+      width: 80%;
+      margin: 0 auto;
+      color: #021776;
+  }
+  .secondary-content h3 {
+      font-size: 25px;
+      margin: 20px 0;
+  }
+  .secondary-content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 20px 0;
+  }
+  .secondary-content ul {
+      margin: 15px 20px;    
+  }
+  .secondary-content li {
+      color: #b23984;
+      margin: 10px 0;
+  }

@@ -53,22 +53,71 @@ function closeMenu() {
 }
 
 
-// Nutr API with no city search
-var apiKeyNurt = "6584c087f01a1fe506b4d8d229ac9b0c";
-var urlNutr = "https://api.nutritionix.com/v1_1/search/mcdonalds?results=0:20&fields=item_name,brand_name,item_id,nf_calories&appId=a1eca907&appKey=6584c087f01a1fe506b4d8d229ac9b0c";
-var apID = "a1eca907";
 
+// Worldwide Restaurants API Documentation
 
-// Yelp API 
-var yelpApiKey = "G8YQ2xM9Koh37S1t_cdPeCy3U2MIw4gX6d4IMiKMxhIadmcIasbracE1PRn7sVpYX01QYmlnF16eWXx6yTezffE7gYr2YHIAV1-93Ys97ivhvFzQ_123QEA1_jXWYXYx";
-var yelpClientKey = "Y4Lnn8XkDx_vJBjpxKzE-Q";
-
-var businessSearch = "https://api.yelp.com/v3/businesses/search?term=restaurants?location=Dallas?";
-
-
-//Example
-fetch("https://api.yelp.com/v3/businesses/search?location=NYC").then((resp) => {
-    return resp.json()
-}).then((data) => {
-    console.log(data)
+//1. Search
+fetch("https://worldwide-restaurants.p.rapidapi.com/search", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+	},
+	"body": {
+		"language": "en_US",
+		"limit": "30",
+		"location_id": "297704",
+		"currency": "USD"
+	}
 })
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+//2. Photos
+fetch("https://worldwide-restaurants.p.rapidapi.com/photos", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+	},
+	"body": {
+		"location_id": "15333482",
+		"language": "en_US",
+		"currency": "USD",
+		"limit": "15"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+//3. Reviews
+fetch("https://worldwide-restaurants.p.rapidapi.com/reviews", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+	},
+	"body": {
+		"location_id": "15333482",
+		"language": "en_US",
+		"limit": "15",
+		"currency": "USD"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});

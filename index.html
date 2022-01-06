@@ -80,7 +80,27 @@
         <div id="status"></div>
     </section>
 
+    <!-- footer-->
+    <footer>
+      <h2>❤️ Made with love by Foodiescape.</h2>
+       <div>
+         <a href="Policy-index.html">Read Our Privacy Policy</a><br />
+          &copy; 2022 Foodiescape , Inc.
+       </div> 
+   </footer>
       
     <script src="./assets/js/script.js"></script>
+    
+    <script>
+        function goPython(){
+            $.ajax({
+              url: "./assets/Python/fooddiescape.py",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');;
+            });
+        }
+    </script>
+
 </body>
 </html>

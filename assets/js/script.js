@@ -43,6 +43,8 @@ function ajax(method, url, data, success, error) {
 
 }
 */
+
+
 // Mobile Menu
 
 const burgerIcon = document.querySelector('#burger');

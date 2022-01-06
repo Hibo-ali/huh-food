@@ -113,8 +113,7 @@ textarea {
 }
 
 .search-form, section {
-  height: 100vh;
-  
+  /*height: 100vh;*/
   background-size: cover;
   display: flex;
   background-position: center;

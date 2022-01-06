@@ -1,8 +1,8 @@
-# huh-food
+# Foodiescape
 
 ## USER STORY
 
-* As a food lover, I want easy access to all restaurants/fast food that delivers in my area. So that I will spend less time searching for indivdual restaurants, because it is compiles in one place
+* As a food lover, I want easy access to all restaurants/fast food that delivers in my area. So that I will spend less time searching for indivdual restaurants, because it is compileD in one place
 
 ## Acceptance Criteria
 
@@ -18,4 +18,13 @@ It is done when:
 We are in a post pandemic world, where we have quickly become reliant on fast food & delivery services. So in light of that we were inspired to help our fellow food lover by compiling all of the restarants 
 and types of cuisine in your area in ONE PLACE!
 
+## Technologies Used
+** Bulma
+** Formspree Api
+** Worldwide Restaurants API
+
+
 ## Contributors
+** Nehaila
+** Dustin
+** Hiba

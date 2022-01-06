@@ -41,11 +41,14 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 
 }
-
-
 // Mobile Menu
+
 const burgerIcon = document.querySelector('#burger');
 const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active')
+});
 
 // Worldwide Restaurants API Documentation
 

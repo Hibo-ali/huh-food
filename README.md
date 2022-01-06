@@ -2,7 +2,7 @@
 
 ## USER STORY
 
-* As a food lover, I want easy access to all restaurants/fast food that delivers in my area. So that I will spend less time searching for indivdual restaurants, because it is compileD in one place
+* As a food lover, I want easy access to all restaurants/fast food that delivers in my area. So that I will spend less time searching for indivdual restaurants, because it is compiled in one place
 
 ## Acceptance Criteria
 

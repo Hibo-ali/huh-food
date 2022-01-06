@@ -6,8 +6,8 @@
 
 body {
   font-family: "Montserret";
-  background-color: #494848;
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url(bg2.jpg);
+  background-color: black;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 section {
   height: 100vh;
@@ -27,6 +27,7 @@ section {
   background-color: white;
   border-radius: 8px;
   margin-bottom: 20px;
+  
 }
 .form-group {
   width: 100%;
@@ -58,9 +59,11 @@ button[type="submit"] {
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s ease background-color;
+  background-color:  rgb(167, 40, 40);
+  color: white;
 }
 button[type="submit"]:hover {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(184, 96, 96);
   color: #fff;
 }
 
@@ -112,7 +115,7 @@ header a {
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin: 0;
     display: inline;
   
@@ -147,20 +150,44 @@ header nav ul li a {
 
 .search-form, section {
   height: 100vh;
-  background-image: url(bg2.jpg);
-  background-size: cover;
   
+  background-size: cover;
+  display: flex;
   background-position: center;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  
+  
+}
+
+/* h2 {
+  padding-top: 20px;
+  color: rgb(167, 40, 40);
+} */
+
+.bg-img {
+  background-image: url("../images/3.jpg");
+  opacity: 0.6;
+  height: 100vh;
+  width: 100%;
+  margin: 2px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+
 }
 
 h2 {
   padding: 7px;
   color: white;
-  margin-bottom: 50px;
-  font-size: 30px;
+  font-weight: bolder;
+  
+  margin-bottom: 10px;
+  font-size: 40px;
   letter-spacing: 2px;
   margin-top: 350px;
   align-items: center;
@@ -186,7 +213,7 @@ h2 {
     width: 600px;
 }
 
-.location {
+.city {
     width: 100px;
 }
 
@@ -196,25 +223,31 @@ h2 {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    background-color: rgb(167, 40, 40);
+    color: #fff;
+    transition: .3s ease background-color;
 }
 
 .search-btn:hover {
-    background-color: rgb(34, 34, 34);
-    color: #fff;
+  background-color: rgb(184, 96, 96);
+  color: #fff;
     
 }
 
 .search-form {
-    align-items: center;
-   
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  display: inline-block;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+.star {
+  color: red;
 }
+
+.optional {
+  color: #707070;
+  font-size: 14px;
+}
+
+/* Styling for the drop down menu */
 
 .dropdown{
     height: 0%;
@@ -250,6 +283,15 @@ body {
     cursor: pointer;
 }
 
+.dropdown .buttonX{
+  top: 20px;
+  right: 50px;
+  font-size: 60px;
+  color: grey;
+}
+
+/* Styling for Hamburger Button on drop down  */
+
 .hamburgerBtn{
     color: #0e4749;
     left: 10px;
@@ -258,11 +300,24 @@ body {
     cursor: pointer;
 }
 
-.dropdown .buttonX{
-    top: 20px;
-    right: 50px;
-    font-size: 60px;
-    color: grey;
+/* add media query to contact form */
+
+@media(max-width:500px){
+  #contact-form{
+    padding: 25px 30px;
+  }
+}
+
+/* add media query to img section */
+
+@media(max-width:500px){
+    .bg-img{ 
+    padding: 25px 30px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+  }
 }
 
 @media screen and (max-height:600px) {

@@ -75,7 +75,11 @@ h2 {
     color: #fff;
 }
 
-a:hover {
+.homepage a {
+    color: #ddd;
+}
+
+.homepage a:hover {
     color: #3c5bc4;
 }
 
@@ -87,19 +91,3 @@ a:hover {
     color: #3c5bc4;
 }
 
-/* .articleNeh, .articleDus, .articleHib {
-    float: left;
-    width: 55px;
-}
-
-.img-sectionNeh, .img-sectionDus, .img-sectionHib {
-    float: right;
-    width: 40%;
-}
-
-.img-sectionNeh, .img-sectionDus, .img-sectionHib img {
-    width: 100%;
-    height: auto;
-}
-
-.articleNeh, .articleDus, .articleHib, .contentNeh  */

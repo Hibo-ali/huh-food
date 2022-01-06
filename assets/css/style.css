@@ -104,13 +104,11 @@ textarea {
 
 header {
   padding: 80px 35px;
-  /* background: rgba(231, 231, 231, 0.514); */
-
 }
 
 header a {
     text-decoration: none;
-    color: rgba;
+    color: whitesmoke;
    
 }
 
@@ -128,26 +126,6 @@ h1, a {
   font-weight: bold;
 }
 
-header nav ul li {
-    display: inline;
-    float: right;
-    margin: 7px 0;
-}
-
-header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-    padding-top: 2px;
-}
-
-
-
-.nav {
-  display: flex;
-  justify-content: inherit;
-}
-
 .search-form, section {
   height: 100vh;
   
@@ -160,11 +138,6 @@ header nav ul li a {
   
   
 }
-
-/* h2 {
-  padding-top: 20px;
-  color: rgb(167, 40, 40);
-} */
 
 .bg-img {
   background-image: url("../images/3.jpg");
@@ -247,59 +220,6 @@ h2 {
   font-size: 14px;
 }
 
-/* Styling for the drop down menu */
-
-.dropdown{
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #002626;
-    overflow-y: hidden;
-    transition: .5s;
-}
-
-.dropdown-lists{
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.dropdown a{
-    padding: 8px;
-    text-decoration: none;
-    font-size: 30px;
-    color: grey;
-    display: block;
-    transition: .3s;
-}
-
-.dropdown a:hover, .dropdown a:focus {
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.dropdown .buttonX{
-  top: 20px;
-  right: 50px;
-  font-size: 60px;
-  color: grey;
-}
-
-/* Styling for Hamburger Button on drop down  */
-
-.hamburgerBtn{
-    color: #0e4749;
-    left: 10px;
-    top: 20px;
-    font-size: 50px;
-    cursor: pointer;
-}
-
 /* add media query to contact form */
 
 @media(max-width:500px){
@@ -320,12 +240,3 @@ h2 {
   }
 }
 
-@media screen and (max-height:600px) {
-    .dropdown .buttonX {
-        font-size: 40px;
-
-    }
-    .hamburgerBtn{
-        font-size: 40px;
-    }
-}

@@ -33,7 +33,7 @@
         <!-- Nav links -->
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-                <a href="" class="navbar-item is-size-4">About Us</a>
+                <a href="./about.html" class="navbar-item is-size-4">About Us</a>
                 <a href="./Policy-index.html" class="navbar-item is-size-4">Policy</a>
                 <a href="./contact.html" class="navbar-item is-size-4">Contact Us</a>
             </div>
@@ -61,5 +61,17 @@
     </div>
 </footer>
     <script src="./assets/js/script.js"></script>
+    
+    <script>
+        function goPython(){
+            $.ajax({
+              url: "./assets/Python/fooddiescape.py",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');;
+            });
+        }
+    </script>
+
 </body>
 </html>

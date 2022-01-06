@@ -1,8 +1,8 @@
-window.addEventListener("DOMContentLoaded", function (){
+window.addEventListener("DOMContentLoaded", function () {
 
     //define form elements in my form HTML
     var form = document.getElementById("my-form");
-    
+
     var status = document.getElementById("status");
 
     //Success and error function for after the form is submitted
@@ -52,68 +52,94 @@ burgerIcon.addEventListener('click', () => {
 
 // Worldwide Restaurants API Documentation
 
-//1. Search
-fetch("https://worldwide-restaurants.p.rapidapi.com/search", {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
-		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
-	},
-	"body": {
-		"language": "en_US",
-		"limit": "30",
-		"location_id": "297704",
-		"currency": "USD"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
+//Using jQuery
+const settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://worldwide-restaurants.p.rapidapi.com/search",
+    "method": "POST",
+    "headers": {
+        "content-type": "application/x-www-form-urlencoded",
+        "x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com",
+        "x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa"
+    },
+    "data": {
+        "language": "en_US",
+        "limit": "30",
+        "location_id": "297704",
+        "currency": "USD"
+    }
+};
+
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
 });
 
-//2. Photos
-fetch("https://worldwide-restaurants.p.rapidapi.com/photos", {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
-		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
-	},
-	"body": {
-		"location_id": "15333482",
-		"language": "en_US",
-		"currency": "USD",
-		"limit": "15"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
 
-//3. Reviews
-fetch("https://worldwide-restaurants.p.rapidapi.com/reviews", {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
-		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
-	},
-	"body": {
-		"location_id": "15333482",
-		"language": "en_US",
-		"limit": "15",
-		"currency": "USD"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+//Using Fetch
+// //1. Search
+// fetch("https://worldwide-restaurants.p.rapidapi.com/search", {
+// 	"method": "POST",
+// 	"headers": {
+// 		"content-type": "application/x-www-form-urlencoded",
+// 		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+// 		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+// 	},
+// 	"body": {
+// 		"language": "en_US",
+// 		"limit": "30",
+// 		"location_id": "297704",
+// 		"currency": "USD"
+// 	}
+// })
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
+
+// //2. Photos
+// fetch("https://worldwide-restaurants.p.rapidapi.com/photos", {
+// 	"method": "POST",
+// 	"headers": {
+// 		"content-type": "application/x-www-form-urlencoded",
+// 		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+// 		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+// 	},
+// 	"body": {
+// 		"location_id": "15333482",
+// 		"language": "en_US",
+// 		"currency": "USD",
+// 		"limit": "15"
+// 	}
+// })
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
+
+// //3. Reviews
+// fetch("https://worldwide-restaurants.p.rapidapi.com/reviews", {
+// 	"method": "POST",
+// 	"headers": {
+// 		"content-type": "application/x-www-form-urlencoded",
+// 		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+// 		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+// 	},
+// 	"body": {
+// 		"location_id": "15333482",
+// 		"language": "en_US",
+// 		"limit": "15",
+// 		"currency": "USD"
+// 	}
+// })
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });

@@ -42,9 +42,12 @@ section {
   border: 1px solid rgba(128, 128, 128, 0.199);
   margin-top: 5px;
 }
-h3 {
+.h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+  
 }
 
 button[type="submit"] {
@@ -219,6 +222,8 @@ h2 {
   color: #707070;
   font-size: 14px;
 }
+
+
 
 /* add media query to contact form */
 

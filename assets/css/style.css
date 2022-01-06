@@ -47,9 +47,12 @@ section {
   margin-top: 5px;
 }
 
-h3 {
+.h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+  
 }
 
 button[type="submit"] {
@@ -180,6 +183,8 @@ textarea {
   color: #707070;
   font-size: 14px;
 }
+
+
 
 /* add media query to contact form */
 

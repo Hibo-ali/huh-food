@@ -19,12 +19,12 @@ We are in a post pandemic world, where we have quickly become reliant on fast fo
 and types of cuisine in your area in ONE PLACE!
 
 ## Technologies Used
-** Bulma
-** Formspree Api
-** Worldwide Restaurants API
+* Bulma
+* Formspree Api
+* Worldwide Restaurants API
 
 
 ## Contributors
-** Nehaila
-** Dustin
-** Hiba
+* Nehaila
+* Dustin
+* Hiba

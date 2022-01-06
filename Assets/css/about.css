@@ -23,6 +23,13 @@ h2 {
     padding-top: 100px;
 }
 
+.header {
+    
+    text-align: center;
+}
+
+
+
 
 .main-container {
     float: left;
@@ -83,11 +90,63 @@ h2 {
     color: #3c5bc4;
 }
 
+
+
 .main-container .social-media {
     margin: 40px 40px;
 }
 
 .main-container .social-media i{
     color: #3c5bc4;
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.main-container .social-media i:hover {
+    color: #3c5bc4;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 760px) {
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+  
+    
+    
+}
+
+.main-container{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.img-section {
+    float: none;
+    width: 100%;
+
+}
+
+.main-container .name {
+    text-align: center;
+    font-size: 19px;
+}
+
+.main-container .content .btn {
+    text-align: center;
+}
+
+.main-container .content .btn a{
+    padding: 9px 30px;
+}
+
+.main-container .social-media {
+    text-align: center;
 }
 

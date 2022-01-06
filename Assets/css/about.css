@@ -118,6 +118,35 @@ h2 {
     }
 
   
+    .main-container{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .img-section {
+        float: none;
+        width: 100%;
+    
+    }
+    
+    .main-container .name {
+        text-align: center;
+        font-size: 19px;
+    }
+    
+    .main-container .content .btn {
+        text-align: center;
+    }
+    
+    .main-container .content .btn a{
+        padding: 9px 30px;
+    }
+    
+    .main-container .social-media {
+        text-align: center;
+    }
     
     
 }

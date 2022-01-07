@@ -10,11 +10,6 @@ h2 {
     font-size: 45px;
 }
 
-.section{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #ddd;
-}
 
 .container{
     width: 80%;
@@ -94,19 +89,31 @@ h2 {
 
 
 .main-container .social-media {
-    margin: 40px 40px;
+    margin: 20px 20px;
 }
 
-.main-container .social-media i{
-    color: #3c5bc4;
+.main-container {
     font-size: 30px;
     padding: 0 10px;
+}
+
+.social-media i{
+    color: #3c5bc4;
+    font-size: 20px;
+    display: inline;
+    letter-spacing: 2px;
 }
 
 .main-container .social-media i:hover {
     color: #3c5bc4;
     opacity: 0.5;
 }
+
+.content p {
+    text-indent: 50px;
+}
+
+
 
 @media screen and (max-width: 760px) {
     .container{
@@ -145,6 +152,10 @@ h2 {
     
     .main-container .social-media {
         text-align: center;
+    }
+
+    .content p {
+        text-indent: 50px;
     }
     
     

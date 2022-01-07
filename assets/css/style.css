@@ -20,6 +20,17 @@ section {
   flex-direction: column;
 }
 
+
+#contact-form{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
 .container {
   width: 90%;
   max-width: 500px;
@@ -47,9 +58,12 @@ section {
   margin-top: 5px;
 }
 
-h3 {
+.h3 {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  color: black;
+  font-weight: bolder;
+  
 }
 
 button[type="submit"] {
@@ -113,8 +127,7 @@ textarea {
 }
 
 .search-form, section {
-  height: 100vh;
-  
+  /*height: 100vh;*/
   background-size: cover;
   display: flex;
   background-position: center;
@@ -181,6 +194,8 @@ textarea {
   color: #707070;
   font-size: 14px;
 }
+
+
 
 /* add media query to contact form */
 

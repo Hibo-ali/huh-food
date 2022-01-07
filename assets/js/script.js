@@ -49,7 +49,6 @@ const navbarMenu = document.querySelector('#nav-links');
 burgerIcon.addEventListener('click', () => {
     navbarMenu.classList.toggle('is-active')
 });
-
 // Worldwide Restaurants API Documentation
 
 //Using jQuery
@@ -74,6 +73,3 @@ const settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 });
-
-
-

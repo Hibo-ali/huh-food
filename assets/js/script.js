@@ -1,4 +1,3 @@
-/*
 window.addEventListener("DOMContentLoaded", function () {
 
     //define form elements in my form HTML
@@ -42,9 +41,6 @@ function ajax(method, url, data, success, error) {
     xhr.send(data);
 
 }
-*/
-
-
 // Mobile Menu
 
 const burgerIcon = document.querySelector('#burger');
@@ -77,3 +73,4 @@ const settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 });
+

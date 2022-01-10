@@ -53,15 +53,36 @@ burgerIcon.addEventListener('click', () => {
 // Worldwide Restaurants API Documentation
 
 //Using jQuery
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://worldwide-restaurants.p.rapidapi.com/search",
+// const settings = {
+// 	"async": true,
+// 	"crossDomain": true,
+// 	"url": "https://worldwide-restaurants.p.rapidapi.com/search",
+// 	"method": "POST",
+// 	"headers": {
+// 		"content-type": "application/x-www-form-urlencoded",
+// 		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
+// 		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+// 	},
+// 	"data": {
+// 		"language": "en_US",
+// 		"limit": "30",
+// 		"location_id": "297704",
+// 		"currency": "USD"
+// 	}
+// };
+
+// $.ajax(settings).done(function (response) {
+// 	console.log(response);
+// });
+
+function getResults(restName) {
+
+    return fetch("https://worldwide-restaurants.p.rapidapi.com/search?id=${restName}", {
 	"method": "POST",
 	"headers": {
 		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "8a4b8f4af6mshad697da7b4112c7p19d468jsnf30df0617daa",
-		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com"
+		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com",
+		"x-rapidapi-key": "7e96271f6fmsh8c10ea0827892c9p1e38f8jsn121308c583d0"
 	},
 	"data": {
 		"language": "en_US",
@@ -69,8 +90,16 @@ const settings = {
 		"location_id": "297704",
 		"currency": "USD"
 	}
-};
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
+})
+.then(response => {
+    return response.json().then((data) => {
+	console.log(data);
+    return data;
+})
+})
+.catch(err => {
+	console.error(err);
 });
+}
+
+getResults();

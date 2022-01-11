@@ -45,3 +45,4 @@ searchBtn.addEventListener("click", function(){
 		console.log(response);
 	});
 });
+

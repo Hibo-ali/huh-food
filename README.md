@@ -28,3 +28,8 @@ and types of cuisine in your area in ONE PLACE!
 * Nehaila
 * Dustin
 * Hiba
+
+
+
+## Photo of the initial design
+![Wireframing](./assets/images/Wireframe.jpg)

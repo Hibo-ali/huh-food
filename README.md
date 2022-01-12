@@ -35,9 +35,9 @@ and types of cuisine in your area in ONE PLACE!
 * Nehaila
 * Dustin
 * Hiba
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD
 >>>>>>> 995af01117632b7c09a4f6f533243decd68ac03c
-=======
+======= -->
 
 
 

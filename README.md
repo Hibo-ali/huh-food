@@ -43,4 +43,4 @@ and types of cuisine in your area in ONE PLACE!
 
 ## Photo of the initial design
 ![Wireframing](./assets/images/Wireframe.jpg)
->>>>>>> af19fb168dcb20d3fea17eddd7e9ea81973ad667
+<!-- >>>>>>> af19fb168dcb20d3fea17eddd7e9ea81973ad667 -->

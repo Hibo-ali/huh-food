@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-## Photo of the initial design
-![Wireframing](./assets/images/Wireframe.jpg)
-=======
 # Foodiescape
 
 ## USER STORY
@@ -32,4 +28,7 @@ and types of cuisine in your area in ONE PLACE!
 * Nehaila
 * Dustin
 * Hiba
->>>>>>> 995af01117632b7c09a4f6f533243decd68ac03c
+
+### Photo of Deployed Mobile Application
+
+![Screenshot](./assets/images/Screenshot.png)

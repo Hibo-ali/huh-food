@@ -1,3 +1,5 @@
+
+=======
 # Foodiescape
 
 ## USER STORY
@@ -29,6 +31,13 @@ and types of cuisine in your area in ONE PLACE!
 * Dustin
 * Hiba
 
+## Link to Deployed Application
+https://hibo-ali.github.io/huh-food/
+
 ### Photo of Deployed Mobile Application
 
 ![Screenshot](./assets/images/Screenshot.png)
+
+## Photo of the initial design
+![Wireframing](./assets/images/Wireframe.jpg)
+
